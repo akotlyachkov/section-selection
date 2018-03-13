@@ -1,0 +1,106 @@
+﻿.pointer:not(.active) {
+    cursor: pointer;
+}
+.section-selection > div{
+    width:50%;
+}
+.section {
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+    &:not(.active):hover {
+        color: #fff;
+        background-color: #2e5ca1;
+        transition-property: background-color, color;
+        transition-duration: 300ms;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    &.active {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: #fff;
+        background-color: #2e5ca1;
+    }
+    &.disabled{
+        &:not(.active):hover {
+            background-color: #ccc!important;
+        }
+        &.active {
+            background-color: #ccc!important;
+        }
+    }
+    &-items-head {
+        padding-left: 50% !important;
+        b {
+            padding: 0 5px;
+        }
+    }
+    &-name {
+        padding: 0 6px;
+    }
+    &-chevron{
+        margin-left: auto;
+        margin-top: 2px;
+    }
+    &-mini {
+        font-size: 10px;
+        padding-left: 23px;
+    }
+    &-icon {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+        color: #b9b9b9;
+    }
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-col {
+        padding: 0 5px 5px 5px;
+        user-select: none;
+    }
+    &-title{
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    &-item {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        padding: 10px;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        transition: background-color 300ms;
+        &:hover {
+            background-color: #eee;
+            transition: background-color 300ms;
+        }
+    }
+}
+
+.section-selection ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.section-selection ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.section-selection ::-webkit-scrollbar-thumb {
+    background-color: #2e5ca1;
+}
+
+.flex {
+    display: flex;
+}
+.cloak{
+    opacity: 0;
+}
+
+

@@ -1,0 +1,36 @@
+body {
+    padding: 50px;
+}
+
+
+.checkbox input {
+    margin-right: 4px;
+    margin-top: 3px;
+}
+.checkbox input,
+.checkbox label {
+
+    cursor: pointer;
+}
+.col-sm-6, .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-xs-12 {
+    float: left;
+}
+.col-xs-12 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .col-sm-6 {
+        float: left;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+}
